@@ -1,0 +1,25 @@
+
+1- Create a User with EBS permissions:
+
+create user with permissions ("AmazonEBSCSIDriverPolicy")
+
+
+2- create an access key for user:
+
+3- create a role and Add permissions:
+
+create a role and Add permissions "AmazonEBSCSIDriverPolicy" 
+
+4- Create a sceret with credentials on AWS:
+kubectl create secret generic aws-secret \
+    --namespace kube-system \
+    --from-literal "key_id=****************" \
+    --from-literal "access_key=*************************"
+---
+########
+MongoDB 
+########   
+for "encrypt" username and password 
+1- echo -n 'username' | base64
+2-echo -n 'password' | base64
+
