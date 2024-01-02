@@ -1,5 +1,7 @@
 # Using k8s to deploy a MongoDB Database with a Mongo Express web-based Admin interface in aws 
 
+![MongoDB-diagram](https://github.com/Ranaahmedit/Mongodb-project/assets/127610751/6bcc54a5-c86e-49d5-b5a7-3fa7cbe0d0fb)
+
 ## Architecture and features:
 * The project will be deployed using a kubeadm cluster.
 * The MongoDB Database will use Amazon EBS as the persistent storage to store data.
